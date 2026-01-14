@@ -31,6 +31,12 @@ def inspect_command(
     
     if not path.exists():
         print_error(f"File not found: {dataset_path}")
+        print_info("Please check the file path and try again.")
+        raise typer.Exit(1)
+    
+    if not path.is_file():
+        print_error(f"Path is not a file: {dataset_path}")
+        print_info("Please provide a path to a dataset file (CSV, Excel, JSON, or Parquet).")
         raise typer.Exit(1)
     
     print_header(f"Inspecting Dataset: {path.name}")
@@ -143,8 +149,11 @@ def inspect_command(
         print_success("Dataset inspection complete!")
         console.print()
         
+    except ValueError as e:
+        print_error(f"Unsupported file format: {str(e)}")
+        print_info("Supported formats: CSV, Excel (.xlsx, .xls), JSON, Parquet")
+        raise typer.Exit(1)
     except Exception as e:
         print_error(f"Failed to inspect dataset: {str(e)}")
-        import traceback
-        console.print(traceback.format_exc())
+        print_info("Please ensure the file is a valid dataset in a supported format.")
         raise typer.Exit(1)
