@@ -248,13 +248,7 @@ pytest --cov=yctl tests/
 
 ### Contributing
 
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+We welcome all contributions! Please check out our [Contributing Guide (CONTRIBUTING.md)](CONTRIBUTING.md) to get started.
 
 ## 📄 License
 
