@@ -265,7 +265,7 @@ Built with:
 
 ## 📧 Support
 
-- Issues: [GitHub Issues](https://github.com/USERNAME/yctl/issues)
+- Issues: [GitHub Issues](https://github.com/Youssef-Ai1001/yctl-cli/issues)
 - Discussions: [GitHub Discussions](https://github.com/USERNAME/yctl/discussions)
 
 ---
