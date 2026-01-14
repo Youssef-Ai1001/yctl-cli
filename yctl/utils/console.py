@@ -9,7 +9,7 @@ from rich.table import Table
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn
 from rich.syntax import Syntax
 from rich.markdown import Markdown
-from typing import Optional
+from typing import List, Optional
 
 # Custom theme for yctl
 custom_theme = Theme({
@@ -56,8 +56,17 @@ def print_panel(content: str, title: Optional[str] = None, style: str = "cyan") 
     console.print(Panel(content, title=title, border_style=style))
 
 
-def create_table(title: str, columns: list[str]) -> Table:
-    """Create a Rich table with standard styling."""
+def create_table(title: str, columns: List[str]) -> Table:
+    """
+    Create a Rich table with standard styling.
+    
+    Args:
+        title: Table title
+        columns: List of column names
+        
+    Returns:
+        Configured Rich Table instance
+    """
     table = Table(title=title, show_header=True, header_style="bold magenta")
     for column in columns:
         table.add_column(column)
