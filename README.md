@@ -25,7 +25,7 @@ A powerful command-line tool that streamlines AI/ML development workflows. Built
 ### Install from source
 
 ```bash
-git clone https://github.com/yourusername/yctl.git
+git clone https://github.com/USERNAME/yctl.git
 cd yctl
 pip install -e .
 ```
@@ -271,8 +271,8 @@ Built with:
 
 ## 📧 Support
 
-- Issues: [GitHub Issues](https://github.com/yourusername/yctl/issues)
-- Discussions: [GitHub Discussions](https://github.com/yourusername/yctl/discussions)
+- Issues: [GitHub Issues](https://github.com/USERNAME/yctl/issues)
+- Discussions: [GitHub Discussions](https://github.com/USERNAME/yctl/discussions)
 
 ---
 

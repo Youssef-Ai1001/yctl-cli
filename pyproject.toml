@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
-    {name = "AI Engineer", email = "your.email@example.com"}
+    {name = "AI Engineer"}
 ]
 keywords = ["ai", "ml", "cli", "deep-learning", "machine-learning", "nlp", "computer-vision"]
 classifiers = [
@@ -49,10 +49,10 @@ dev = [
 yctl = "yctl.main:app"
 
 [project.urls]
-Homepage = "https://github.com/yourusername/yctl"
-Documentation = "https://github.com/yourusername/yctl/wiki"
-Repository = "https://github.com/yourusername/yctl"
-Issues = "https://github.com/yourusername/yctl/issues"
+Homepage = "https://github.com/USERNAME/yctl"
+Documentation = "https://github.com/USERNAME/yctl#readme"
+Repository = "https://github.com/USERNAME/yctl"
+Issues = "https://github.com/USERNAME/yctl/issues"
 
 [tool.black]
 line-length = 100
