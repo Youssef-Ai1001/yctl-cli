@@ -254,6 +254,57 @@ We welcome all contributions! Please check out our [Contributing Guide (CONTRIBU
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 🛠 Troubleshooting
+
+This section covers common issues users may face during setup and execution.
+
+### ❌ CUDA / NVIDIA Driver Issues (Linux)
+
+**Error**
+CUDA not detected, `nvidia-smi` command not found, or PyTorch reports `CUDA available: False`.
+
+
+**Fix**
+```bash
+nvidia-smi
+sudo ubuntu-drivers autoinstall
+reboot
+
+**Docs**
+- https://docs.nvidia.com/cuda/
+- https://pytorch.org/get-started/locally/
+
+### ❌ OpenCV missing `libGL.so.1`
+
+**Error**
+ImportError: libGL.so.1: cannot open shared object file
+
+**Fix**
+```bash
+sudo apt update
+sudo apt install -y libgl1
+
+**Docs**
+- https://docs.opencv.org/
+
+
+### ❌ Permission denied when creating virtual environment
+
+**Error**
+PermissionError: [Errno 13] Permission denied
+
+**Fix**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+
+**Docs**
+- https://docs.python.org/3/library/venv.html
+
+
+
+
 ## 🙏 Acknowledgments
 
 Built with:
