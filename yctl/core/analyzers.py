@@ -37,7 +37,7 @@ class DatasetAnalyzer:
         suffix = self.file_path.suffix.lower()
         
         if suffix == '.csv':
-            self.df = pd.read_csv(self.file_path)
+            self.df = pd.read_csv(self.file_path, sep=None, engine = "python")
         elif suffix in ['.xlsx', '.xls']:
             self.df = pd.read_excel(self.file_path)
         elif suffix == '.json':
