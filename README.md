@@ -319,6 +319,5 @@ Built with:
 - Issues: [GitHub Issues](https://github.com/Youssef-Ai1001/yctl-cli/issues)
 - Discussions: [GitHub Discussions](https://github.com/Youssef-Ai1001/yctl-cli/discussions)
 
----
 
 **Made with ❤️ for AI Engineers**
